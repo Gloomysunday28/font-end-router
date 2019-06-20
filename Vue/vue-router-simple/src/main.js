@@ -6,6 +6,6 @@ Vue.use(Router)
 Vue.config.productionTip = false
 
 new Vue({
-  mode: 'history',
+  mode: 'hash',
   render: h => h(App),
 }).$mount('#app')

@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     routerChange() {
-      const path = window.location[this.mode === 'hash' ? 'hash' : 'pathname'].replace('#', '')
+      const path = window.location[this.$root.$options.mode === 'hash' ? 'hash' : 'pathname'].replace('#', '')
       const route = routes.find(r => r.path === path)
       if (route) {
         this.routerview = route.component
